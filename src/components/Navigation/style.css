@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: black;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+}
