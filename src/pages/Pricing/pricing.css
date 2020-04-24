@@ -1,0 +1,15 @@
+.pricePage {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.priceBox {
+    border: 2px solid black;
+}
