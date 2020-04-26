@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as Routes from './constants/routes';
 import Home from './pages/Home/index.js';
 import About from './pages/About/index.js';
-import Products from './pages/Products/index.js';
+import Pricing from './pages/Pricing/index.js';
 import Cart from './pages/Cart/index.js';
 
 // Components
@@ -25,7 +25,7 @@ const App = () => (
             <Switch>
                 <Route exact path={Routes.HomePath} component={Home}/>
                 <Route path={Routes.AboutPath} component={About}/>
-                <Route path={Routes.ProductsPath} component={Products}/>
+                <Route path={Routes.PricingPath} component={Pricing}/>
                 <Route path={Routes.CartPath} component={Cart}/>
             </Switch>
             </main>

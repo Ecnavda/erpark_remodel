@@ -27,7 +27,7 @@ const Navigation = () => (
         <ul>
             <li><Link style={ItemStyles} to={Routes.HomePath}>Home</Link></li>
             <li><Link style={ItemStyles} to={Routes.AboutPath}>About</Link></li>
-            <li><Link style={ItemStyles} to={Routes.ProductsPath}>Products</Link></li>
+            <li><Link style={ItemStyles} to={Routes.PricingPath}>Pricing</Link></li>
             <li><Link style={ItemStyles} to={Routes.CartPath}><img src={Cart} height="20px"/></Link></li>
         </ul>
     </nav>
