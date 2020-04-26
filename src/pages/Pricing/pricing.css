@@ -1,5 +1,28 @@
 .pricePage {
-    width: 80vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: url("er_park_header.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    padding-bottom: 90px;
+    font-size: 50px;
+}
+
+.priceSection {
+    width: 1279px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,5 +34,12 @@
 }
 
 .priceBox {
-    border: 2px solid black;
+    border-radius: 7px;
+    background: #074815;
+    padding: 20px;
+    color: white;
+}
+
+.slime {
+    color: #1EC61E;
 }

@@ -8,15 +8,17 @@ import React from 'react';
 const Price = props => {
     return (
         <div>
-            <h3>{props.title}</h3>
-            <span>{props.players} PLAYERS</span>
+            <h3 class="slime">{props.title}</h3>
+            <span style={{ color: '#074815' }}>{props.players} PLAYERS</span>
             <br/>
             <div class="priceBox">
-                <span>{props.price} per player</span>
-                <br/>
-                <span>{props.paintballs} paintballs/player</span>
-                <br/>
-                <span>Image of little people goes here.</span>
+                <p class="slime">{props.price} per player</p>
+                <p style={{
+                    background: '#1D652C',
+                    borderRadius: '7px',
+                    padding: '5px'
+                }}>{props.paintballs} paintballs/player</p>
+                <p>Image of little people goes here.</p>
             </div>
         </div>
     )

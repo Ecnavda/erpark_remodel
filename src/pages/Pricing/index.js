@@ -5,9 +5,11 @@ import './pricing.css';
 
 const Pricing = () => {
     return (
-        <div>
-            This is the <span>Pricing</span> page.
-            <div class="pricePage">
+        <div class="pricePage">
+            <header>
+                <h1 class="slime">Rates</h1>
+            </header>
+            <section class="priceSection">
                 <div class="priceContainer">
                     <Price
                         title = "Gremlin Package"
@@ -36,7 +38,7 @@ const Pricing = () => {
                         paintballs = "500"
                     />
                 </div>
-            </div>
+            </section>
         </div>
     )
 };
