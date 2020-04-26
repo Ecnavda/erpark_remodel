@@ -1,8 +1,9 @@
 import React from 'react';
+import FrontFeature from '../../components/FrontFeature';
 
 const Home = () => ( 
     <div>
-        This is the <span class="current-page">home</span> page.
+        <FrontFeature/>        
     </div>
 );
 
