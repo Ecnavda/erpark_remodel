@@ -29,15 +29,7 @@ body {
 }
 
 main {
-    /* background-color: rgb(68, 211, 144); */
-    min-height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.current-page {
-    background-color: rgb(0, 179, 95);
-    color: white;
-    padding: 10px;
 }
