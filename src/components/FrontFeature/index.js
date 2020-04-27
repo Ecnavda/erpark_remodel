@@ -22,10 +22,10 @@ function FrontFeatureBase(props) {
 function PageTurn(props) {
     return(
         <div class="pages-container">
-            <div class={props.currentPage} id="p1" onClick={props.handlePages}></div>
-            <div class={props.currentPage} id="p2" onClick={props.handlePages}></div>
-            <div class={props.currentPage} id="p3" onClick={props.handlePages}></div>
-            <div class={props.currentPage} id="p4" onClick={props.handlePages}></div>   
+            <div class={props.p1Page} id="p1" onClick={props.handlePages}></div>
+            <div class={props.p2Page} id="p2" onClick={props.handlePages}></div>
+            <div class={props.p3Page} id="p3" onClick={props.handlePages}></div>
+            <div class={props.p4Page} id="p4" onClick={props.handlePages}></div>   
         </div>
     );
 }
@@ -35,8 +35,10 @@ class FrontFeature extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentClass: "",
-            currentPage: "p1",
+            p1: "current-page",
+            p2: "",
+            p3: "",
+            p4: "",
             imageStyle: "feature1-bg",
             imageIcon: `${ImgIcon1}`,
             verbage: "paint your rage"
@@ -50,7 +52,10 @@ class FrontFeature extends Component {
         switch(event.target.id) {
             case "p1":
                 this.setState({
-                    currentPage: "p1",
+                    p1: "current-page",
+                    p2: "",
+                    p3: "",
+                    p4: "",
                     imageStyle: "feature1-bg",
                     imageIcon: `${ImgIcon1}`,
                     verbage: "paint your rage"
@@ -59,16 +64,22 @@ class FrontFeature extends Component {
 
             case "p2":
                 this.setState({
-                    currentPage: "p2",
+                    p1: "",
+                    p2: "current-page",
+                    p3: "",
+                    p4: "",
                     imageStyle: "feature2-bg",
                     imageIcon: `${ImgIcon2}`,
-                    verbage: "unlimited use and plau"
+                    verbage: "unlimited use and play"
                 });
                 break;
 
             case "p3":
                 this.setState({
-                    currentPage: "p3",
+                    p1: "",
+                    p2: "",
+                    p3: "current-page",
+                    p4: "",
                     imageStyle: "feature3-bg",
                     imageIcon: `${ImgIcon3}`,
                     verbage: "#1 Paintball Park in the entire South Florida area."
@@ -77,7 +88,10 @@ class FrontFeature extends Component {
             
             case "p4":
                 this.setState({
-                    currentPage: "p4",
+                    p1: "",
+                    p2: "",
+                    p3: "",
+                    p4: "current-page",
                     imageStyle: "feature4-bg",
                     imageIcon: `${ImgIcon4}`,
                     verbage: "experience the adrenaline rush of the fastest growing extreme sport"
@@ -85,18 +99,6 @@ class FrontFeature extends Component {
                 break;
         }
 
-    }
-
-    handleCurrentPage(pageID) {
-        if (pageID == this.state.currentPage) {
-            this.setState({ 
-                currentClass: "current-page"
-            });
-        } else {
-            this.setState({ 
-                currentClass: ""
-            });
-        }
     }
 
     render() {
@@ -110,7 +112,10 @@ class FrontFeature extends Component {
 
                 <PageTurn
                     handlePages={(event) => this.changePage(event)}
-                    currentPage={(event) => this.handleCurrentPage(event)}
+                    p1Page={this.state.p1}
+                    p2Page={this.state.p2}
+                    p3Page={this.state.p3}
+                    p4Page={this.state.p4}
                 />
             </div>
         );
