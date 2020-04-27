@@ -1,0 +1,6 @@
+#terminator-section {
+    background-image: url('../../assets/images/terminator-wars.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
