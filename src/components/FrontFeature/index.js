@@ -13,7 +13,7 @@ function FrontFeatureBase(props) {
         <div class={props.bgImageStyle} id="feature-container">
             <img class="feature-icon" src={props.iconSource}/>
             <hr></hr>
-            <span class="feature-verbage">{props.verbage}</span>
+            <span class="white-verbage">{props.verbage}</span>
         </div>
     );
 }

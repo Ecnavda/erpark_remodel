@@ -4,8 +4,8 @@ import './style.css';
 
 const TerminatorWars = () => (
     <section id="terminator-section">
-        <span>Terminator Wars</span>
-        <span>Scenario Game</span>
+        <span class="green-verbage">Terminator Wars</span>
+        <span class="white-verbage">Scenario Game</span>
     </section>    
 );
 
