@@ -9,15 +9,11 @@ const Price = props => {
     return (
         <div>
             <h3 class="slime">{props.title}</h3>
-            <span style={{ color: '#074815' }}>{props.players} PLAYERS</span>
+            <span class="robot" style={{ color: '#074815', fontSize: '56pt' }}>{props.players} PLAYERS</span>
             <br/>
             <div class="priceBox">
                 <p class="slime">{props.price} per player</p>
-                <p style={{
-                    background: '#1D652C',
-                    borderRadius: '7px',
-                    padding: '5px'
-                }}>{props.paintballs} paintballs/player</p>
+                <p class="robot paintballs">{props.paintballs} paintballs/player</p>
                 <p>Image of little people goes here.</p>
             </div>
         </div>

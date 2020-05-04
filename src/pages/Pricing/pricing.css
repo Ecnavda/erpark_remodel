@@ -4,21 +4,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: black;
+    font-family: 'Agency FB', Arial;
 }
 
 header {
-    width: 100%;
-    height: 500px;
-    background: url("er_park_header.png");
+    width: 100vw;
+    height: 120vh;
+    background: url("../../assets/images/rates-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header h1 {
-    padding-bottom: 90px;
-    font-size: 50px;
+h1.slime {
+    font-size: 154px;
+}
+
+h3.slime {
+    font-size: 92px;
 }
 
 .priceSection {
@@ -43,3 +49,18 @@ header h1 {
 .slime {
     color: #1EC61E;
 }
+
+.robot {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.paintballs {
+    background: #1D652C;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+/* Importing AgencyFB font */
+@import url(http://allfont.net/allfont.css?fonts=agency-fb);
