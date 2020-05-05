@@ -53,9 +53,25 @@ const Pricing = () => {
                 </div>
             </div>
             <div class="section">
-                <h1>RATES GO BELOW HERE</h1>
-                
-                <hr/>
+                <div class="playerPackageContainer">
+                    <span id="playerPackageTitle">Rates</span>
+                    <br/>
+                    <hr class="slime"/>
+                </div>
+            </div>
+            <div class="section">
+                <div class="playerPackageContainer">
+                    <span id="playerPackageTitle">Paintballs</span>
+                    <br/>
+                    <hr class="slime"/>
+                </div>
+            </div>
+            <div class="section">
+                <div class="playerPackageContainer">
+                    <span id="playerPackageTitle">Rental Accessories</span>
+                    <br/>
+                    <hr class="slime"/>
+                </div>
             </div>
         </div>
     )
