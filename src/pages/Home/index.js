@@ -1,8 +1,15 @@
 import React from 'react';
+import FrontFeature from '../../components/FrontFeature';
+import CallToAction from '../../components/CallToAction';
+import TerminatorWars from '../../components/TerminatorWars';
+import FrontInfo from '../../components/FrontInfo';
 
 const Home = () => ( 
     <div>
-        This is the <span class="current-page">home</span> page.
+        <FrontFeature/>   
+        <CallToAction/> 
+        <TerminatorWars/>
+        <FrontInfo/>
     </div>
 );
 

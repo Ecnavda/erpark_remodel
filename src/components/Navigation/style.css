@@ -1,17 +1,22 @@
+#erpark-logo {
+    margin: 0 0 0 -30px;
+}
+
 nav {
     display: flex;
-    list-style-type: none;
-    justify-content: center;
-    background-color: black;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
 }
 
 ul li {
-    display: inline-block;
     list-style-type: none;
-}
-
-ul li a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: white;
 }
