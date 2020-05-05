@@ -10,7 +10,7 @@ const Pricing = () => {
             <header>
                 <h1 class="slime">Rates</h1>
             </header>
-            <form>
+            <form method="GET" action="https://httpbin.org/get">
                 <div class="section priceSection">
                     <div class="playerPackageContainer">
                         <span id="playerPackageTitle">Player Packages</span>
@@ -18,7 +18,7 @@ const Pricing = () => {
                         <hr class="slime"/>
                     </div>
                     <div class="priceContainer">
-                        <input type="radio" id="gremlin" name="packages"></input>
+                        <input type="radio" id="gremlin" name="packages" value="gremlin"></input>
                         <label for="gremlin">
                             <Package
                                 title = "Gremlin Package"
@@ -29,7 +29,7 @@ const Pricing = () => {
                                 persons2 = '4'
                             />
                         </label>
-                        <input type="radio" id="ogre" name="packages"></input>
+                        <input type="radio" id="ogre" name="packages" value="ogre"></input>
                         <label for="ogre">
                             <Package
                                 title = "Ogre Package"
@@ -42,7 +42,7 @@ const Pricing = () => {
                         </label>
                     </div>
                     <div class="priceContainer">
-                        <input type="radio" id="goliath" name="packages"></input>
+                        <input type="radio" id="goliath" name="packages" value="goliath"></input>
                         <label for="goliath">
                             <Package
                                 title = "Goliath Package"
@@ -53,7 +53,7 @@ const Pricing = () => {
                                 persons2 = '7'
                             />
                         </label>
-                        <input type="radio" id="godzilla" name="packages"></input>
+                        <input type="radio" id="godzilla" name="packages" value="godzilla"></input>
                         <label for="godzilla">
                             <Package
                                 title = "Godzilla Package"
@@ -114,7 +114,7 @@ const Pricing = () => {
                         <hr class="slime"/>
                     </div>
                     <div class="rateContainer">
-                        <input type="radio" id="paintballs1" name="paintballOrder"/>
+                        <input type="radio" id="paintballs1" name="paintballOrder" value="100"/>
                         <label for="paintballs1">
                             <Rate
                                 price = "$5"
@@ -122,7 +122,7 @@ const Pricing = () => {
                                 description2 = "ROUNDS"
                             />
                         </label>
-                        <input type="radio" id="paintballs2" name="paintballOrder"/>
+                        <input type="radio" id="paintballs2" name="paintballOrder" value="500"/>
                         <label for="paintballs2">
                             <Rate
                                 price = "$20"
@@ -130,7 +130,7 @@ const Pricing = () => {
                                 description2 = "ROUNDS"
                             />
                         </label>
-                        <input type="radio" id="paintballs3" name="paintballOrder"/>
+                        <input type="radio" id="paintballs3" name="paintballOrder" value="1000"/>
                         <label for="paintballs3">
                             <Rate
                                 price = "$35"
@@ -138,7 +138,7 @@ const Pricing = () => {
                                 description2 = "ROUNDS"
                             />
                         </label>
-                        <input type="radio" id="paintballs4" name="paintballOrder"/>
+                        <input type="radio" id="paintballs4" name="paintballOrder" value="2000"/>
                         <label for="paintballs4">
                             <Rate
                                 price = "$60"
