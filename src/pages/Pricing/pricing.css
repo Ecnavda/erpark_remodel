@@ -103,6 +103,7 @@ div.section {
     position: relative;
     top: -50px;
     right: -10px;
+    font-family: 'AgencyFB Bold';
 }
 
 .perPlayer span:first-child {
