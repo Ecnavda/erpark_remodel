@@ -115,6 +115,11 @@ div.section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.4s;
+}
+
+.packagePriceBox:hover {
+    box-shadow: 0 12px 17px 5px rgba(0, 0, 0, 1), 0 17px 50px 5px rgba(0, 0, 0, 0.1);
 }
 
 .packagePriceBoxText {
@@ -198,6 +203,11 @@ div.section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.4s;
+}
+
+.rateBox:hover {
+    box-shadow: 0 12px 17px 5px rgba(0, 0, 0, 1), 0 17px 50px 5px rgba(0, 0, 0, 0.1);
 }
 
 .ratePrice {
@@ -213,14 +223,17 @@ div.section {
 button.reservation {
     background: #1EC61E;
     color: black;
+    border: none;
     border-radius: 15px;
     font-size: 20px;
     width: 320px;
     height: 65px;
+    transition: 0.4s;
 }
 
 button.reservation:hover {
     color: white;
+    box-shadow: 0 12px 17px 5px rgba(0, 0, 0, 1), 0 17px 50px 5px rgba(0, 0, 0, 0.1);
 }
 
 .reservationContainer {
