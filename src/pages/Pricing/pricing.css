@@ -48,7 +48,7 @@
 #allDayPlay:checked + label .rateBox, #allDayAir:checked + label .rateBox,
 #rentalEquipment:checked + label .rateBox, #rentalUpgrade:checked + label .rateBox,
 #paintballs1:checked + label .rateBox, #paintballs2:checked + label .rateBox,
-#paintballs3:checked + label .rateBox, #paintballs4:checked + label .rateBox
+#paintballs3:checked + label .rateBox, #paintballs4:checked + label .rateBox,
 #chestProtector:checked + label .rateBox, #tankRental:checked + label .rateBox,
 #maskRental:checked + label .rateBox, #vl200:checked + label .rateBox,
 #jumpsuits:checked + label .rateBox, #harnessPods:checked + label .rateBox,
