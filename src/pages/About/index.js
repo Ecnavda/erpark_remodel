@@ -29,7 +29,7 @@ const About = () => (
             </div>
         </div>
         <FeatureImage
-            bgImage = "feature1-bg"
+            bgImage = "abtfeature1-bg"
             iconSource = {iconimage1}
             verbage = "our fields are perfect for both recreational and competitive players"
         />
@@ -51,7 +51,7 @@ const About = () => (
             </div>
         </div>
         <FeatureImage
-            bgImage = "feature2-bg"
+            bgImage = "abtfeature2-bg"
             iconSource = {iconimage2}
             verbage = "ER Park invites you to come out and experience the adrenaline rush of the fastest growing extreme sport"
         />
