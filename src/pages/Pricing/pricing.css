@@ -57,10 +57,10 @@ div.section {
 .priceContainer {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
-.priceBox {
+.packagePriceBox {
     border-radius: 20px;
     background: #074815;
     height: 400px;
@@ -72,7 +72,7 @@ div.section {
     justify-content: space-between;
 }
 
-.priceBoxText {
+.packagePriceBoxText {
     margin-left: 50px;
     margin-bottom: -10px;
 }
@@ -87,7 +87,7 @@ div.section {
     color: #074815;
 }
 
-.priceBox div:first-child {
+.packagePriceBox div:first-child {
     margin-bottom: -80px;
 }
 
@@ -134,4 +134,47 @@ div.section {
 .robot {
     font-family: Roboto;
     font-weight: bold;
+}
+
+.rateContainer {
+    display: flex;
+    justify-content: space-evenly;    
+    margin-top: 100px;
+}
+
+.rateBox {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratePrice {
+    font-size: 80px;
+    font-family: 'AgencyFB Bold';
+    margin-bottom: 15px;
+}
+
+.rateDescription {
+    font-size: 30px;
+}
+
+.reservation {
+    background: #1EC61E;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 320px;
+    height: 65px;
+}
+
+.reservationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
 }

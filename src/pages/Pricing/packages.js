@@ -13,15 +13,15 @@ function peopleFactory(persons) {
     return (crowd)
 }
 
-const PricePackage = props => {
+const Package = props => {
     return (
         <div>
-            <div class="priceBoxText">
+            <div class="packagePriceBoxText">
                 <span class="slime packageTitle">{props.title}</span>
                 <br/>
                 <span class="robot packagePlayers">{props.players} PLAYERS</span>
             </div>
-            <div class="priceBox">
+            <div class="packagePriceBox">
                 <div>
                     <div style={{display: 'inline-block'}}>
                         <span class="slime packagePrice">{props.price}</span>
@@ -47,4 +47,4 @@ const PricePackage = props => {
     )
 };
 
-export default PricePackage;
+export default Package;
