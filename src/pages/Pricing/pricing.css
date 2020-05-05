@@ -1,10 +1,15 @@
+/* React.js displays all css files as individual style tags
+** upon loading the home page.
+*/
+
 .pricePage {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Agency FB', Arial;
+    font-family: AgencyFB, Arial;
+    color: white;
 }
 
 header {
@@ -23,12 +28,27 @@ h1.slime {
     font-size: 154px;
 }
 
-h3.slime {
-    font-size: 92px;
+div.section {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.playerPackageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerPackageTitle {
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+
+.playerPackageContainer hr {
+    width: 350px;
 }
 
 .priceSection {
-    width: 1279px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -37,13 +57,74 @@ h3.slime {
 .priceContainer {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 200px;
 }
 
 .priceBox {
-    border-radius: 7px;
+    border-radius: 20px;
     background: #074815;
-    padding: 20px;
+    height: 400px;
+    width: 550px;
     color: white;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.priceBoxText {
+    margin-left: 50px;
+    margin-bottom: -10px;
+}
+
+.packageTitle {
+    font-family: 'AgencyFB Bold';
+    font-size: 82px;
+}
+
+.packagePlayers {
+    font-size: 40px;
+    color: #074815;
+}
+
+.priceBox div:first-child {
+    margin-bottom: -80px;
+}
+
+.packagePrice {
+    font-family: 'AgencyFB Bold';
+    font-size: 120px;
+}
+
+.perPlayer {
+    display: inline-flex;
+    font-size: 50px;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    right: -10px;
+}
+
+.perPlayer span:first-child {
+    margin-bottom: -15px;
+}
+
+.paintballs {
+    background: #1D652C;
+    border-radius: 13px;
+    padding: 8px 25px;
+    font-size: 25px;
+}
+
+.people div:first-child {
+    margin-bottom: 10px;
+}
+
+.productPerson {
+    fill: #fff;
+    height: 50px;
+    width: 30px;
+    margin-right: 15px;
 }
 
 .slime {
@@ -54,13 +135,3 @@ h3.slime {
     font-family: Roboto;
     font-weight: bold;
 }
-
-.paintballs {
-    background: #1D652C;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-
-/* Importing AgencyFB font */
-@import url(http://allfont.net/allfont.css?fonts=agency-fb);

@@ -1,5 +1,5 @@
 import React from 'react';
-import Price from './pieces';
+import PricePackage from './packages';
 
 import './pricing.css';
 
@@ -9,36 +9,54 @@ const Pricing = () => {
             <header>
                 <h1 class="slime">Rates</h1>
             </header>
-            <section class="priceSection">
+            <div class="section priceSection">
+                <div class="playerPackageContainer">
+                    <span id="playerPackageTitle">Player Packages</span>
+                    <br/>
+                    <hr class="slime"/>
+                </div>
                 <div class="priceContainer">
-                    <Price
+                    <PricePackage
                         title = "Gremlin Package"
                         players = "8-14"
                         price = "$30"
                         paintballs = "250"
+                        persons1 = '4'
+                        persons2 = '4'
                     />
-                    <Price
+                    <PricePackage
                         title = "Ogre Package"
                         players = "8 - 14"
                         price = "$40"
                         paintballs = "500"
+                        persons1 = '4'
+                        persons2 = '4'
                     />
                 </div>
                 <div class="priceContainer">
-                    <Price
+                    <PricePackage
                         title = "Goliath Package"
                         players = "15 - 24"
                         price = "$38"
                         paintballs = "500"
+                        persons1 = '8'
+                        persons2 = '7'
                     />
-                    <Price
+                    <PricePackage
                         title = "Godzilla Package"
-                        player = "25+"
+                        players = "25"
                         price = "$35"
                         paintballs = "500"
+                        persons1 = '12'
+                        persons2 = '8'
                     />
                 </div>
-            </section>
+            </div>
+            <div class="section">
+                <h1>RATES GO BELOW HERE</h1>
+                
+                <hr/>
+            </div>
         </div>
     )
 };
