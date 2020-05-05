@@ -1,7 +1,15 @@
 #frontinfo-section {
     display: flex; 
     height: 120vh;
-    margin-top: -50px;
+    margin-top: -10px;
+}
+
+#info-hours {
+    margin-left: 20%;
+}
+
+#info-contact {
+    margin-right: 20%;
 }
 
 .infosection {

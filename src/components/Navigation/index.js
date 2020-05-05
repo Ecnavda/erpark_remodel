@@ -23,7 +23,7 @@ const ItemStyles = {
 
 const Navigation = () => ( 
     <nav>
-        <img id="erpark-logo" src={Logo} height="30" width="200"/>
+        <a href="/"><img id="erpark-logo" src={Logo} height="30" width="200"/></a>
         <ul>
             <li><Link style={ItemStyles} to={Routes.HomePath}>Home</Link></li>
             <li><Link style={ItemStyles} to={Routes.AboutPath}>About</Link></li>

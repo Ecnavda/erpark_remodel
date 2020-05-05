@@ -8,7 +8,7 @@ import YTIcon from '../../assets/icons/youtube-icon.svg';
 const Footer = () => ( 
     <footer>
         <div class="btn-container">
-            <button>Contact Us Today!</button>
+            <a href="#info-contact" class="contact-btn">Contact Us Today!</a>
         </div>
 
         <div class="social-container">
