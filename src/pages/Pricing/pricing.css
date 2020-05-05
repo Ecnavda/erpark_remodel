@@ -12,6 +12,52 @@
     color: white;
 }
 
+.pricePage form {
+    width: 100%;
+}
+
+.pricePage input {
+    position: fixed;
+    opacity: 0;
+}
+
+#gremlin:focus + label .packagePlayers {color: #1EC61E}
+#gremlin:focus + label .packagePriceBox {background: #1EC61E}
+#gremlin:focus + label .packagePriceBox span.slime {color: white}
+#gremlin:focus + label .packagePriceBox .paintballs {background: black}
+#gremlin:focus + label .packagePriceBox .people svg {fill: black}
+
+#ogre:focus + label .packagePlayers {color: #1EC61E}
+#ogre:focus + label .packagePriceBox {background: #1EC61E}
+#ogre:focus + label .packagePriceBox span.slime {color: white}
+#ogre:focus + label .packagePriceBox .paintballs {background: black}
+#ogre:focus + label .packagePriceBox .people svg {fill: black}
+
+#goliath:focus + label .packagePlayers {color: #1EC61E}
+#goliath:focus + label .packagePriceBox {background: #1EC61E}
+#goliath:focus + label .packagePriceBox span.slime {color: white}
+#goliath:focus + label .packagePriceBox .paintballs {background: black}
+#goliath:focus + label .packagePriceBox .people svg {fill: black}
+
+#godzilla:focus + label .packagePlayers {color: #1EC61E}
+#godzilla:focus + label .packagePriceBox {background: #1EC61E}
+#godzilla:focus + label .packagePriceBox span.slime {color: white}
+#godzilla:focus + label .packagePriceBox .paintballs {background: black}
+#godzilla:focus + label .packagePriceBox .people svg {fill: black}
+
+#allDayPlay:checked + label .rateBox, #allDayAir:checked + label .rateBox,
+#rentalEquipment:checked + label .rateBox, #rentalUpgrade:checked + label .rateBox,
+#paintballs1:focus + label .rateBox, #paintballs2:focus + label .rateBox,
+#paintballs3:focus + label .rateBox, #paintballs4:focus + label .rateBox,
+#chestProtector:checked + label .rateBox, #tankRental:checked + label .rateBox,
+#maskRental:checked + label .rateBox, #vl200:checked + label .rateBox,
+#jumpsuits:checked + label .rateBox, #harnessPods:checked + label .rateBox,
+#electricHopper:checked + label .rateBox {
+    background: #074815;
+    border-radius: 40px;
+}
+
+
 header {
     width: 100vw;
     height: 120vh;
@@ -148,6 +194,7 @@ div.section {
     width: 200px;
     padding: 20px;
     border-radius: 20px;
+    transition: border-radius .3s;
     background: #262626;
     display: flex;
     flex-direction: column;
@@ -164,13 +211,17 @@ div.section {
     font-size: 30px;
 }
 
-.reservation {
+button.reservation {
     background: #1EC61E;
     color: black;
     border-radius: 15px;
     font-size: 20px;
     width: 320px;
     height: 65px;
+}
+
+button.reservation:hover {
+    color: white;
 }
 
 .reservationContainer {

@@ -10,156 +10,215 @@ const Pricing = () => {
             <header>
                 <h1 class="slime">Rates</h1>
             </header>
-            <div class="section priceSection">
-                <div class="playerPackageContainer">
-                    <span id="playerPackageTitle">Player Packages</span>
-                    <br/>
-                    <hr class="slime"/>
+            <form>
+                <div class="section priceSection">
+                    <div class="playerPackageContainer">
+                        <span id="playerPackageTitle">Player Packages</span>
+                        <br/>
+                        <hr class="slime"/>
+                    </div>
+                    <div class="priceContainer">
+                        <input type="radio" id="gremlin" name="packages"></input>
+                        <label for="gremlin">
+                            <Package
+                                title = "Gremlin Package"
+                                players = "8-14"
+                                price = "$30"
+                                paintballs = "250"
+                                persons1 = '4'
+                                persons2 = '4'
+                            />
+                        </label>
+                        <input type="radio" id="ogre" name="packages"></input>
+                        <label for="ogre">
+                            <Package
+                                title = "Ogre Package"
+                                players = "8 - 14"
+                                price = "$40"
+                                paintballs = "500"
+                                persons1 = '4'
+                                persons2 = '4'
+                            />
+                        </label>
+                    </div>
+                    <div class="priceContainer">
+                        <input type="radio" id="goliath" name="packages"></input>
+                        <label for="goliath">
+                            <Package
+                                title = "Goliath Package"
+                                players = "15 - 24"
+                                price = "$38"
+                                paintballs = "500"
+                                persons1 = '8'
+                                persons2 = '7'
+                            />
+                        </label>
+                        <input type="radio" id="godzilla" name="packages"></input>
+                        <label for="godzilla">
+                            <Package
+                                title = "Godzilla Package"
+                                players = "25"
+                                price = "$35"
+                                paintballs = "500"
+                                persons1 = '12'
+                                persons2 = '8'
+                            />
+                        </label>
+                    </div>
                 </div>
-                <div class="priceContainer">
-                    <Package
-                        title = "Gremlin Package"
-                        players = "8-14"
-                        price = "$30"
-                        paintballs = "250"
-                        persons1 = '4'
-                        persons2 = '4'
-                    />
-                    <Package
-                        title = "Ogre Package"
-                        players = "8 - 14"
-                        price = "$40"
-                        paintballs = "500"
-                        persons1 = '4'
-                        persons2 = '4'
-                    />
+                <div class="section">
+                    <div class="playerPackageContainer">
+                        <span id="playerPackageTitle">Rates</span>
+                        <br/>
+                        <hr class="slime"/>
+                    </div>
+                    <div class="rateContainer">
+                        <input type="checkbox" id="allDayPlay" name="allDayPlay" value="true"/>
+                        <label for="allDayPlay">
+                            <Rate
+                                price = "$15"
+                                description1 = "ALL DAY"
+                                description2 = "PLAY"
+                            />
+                        </label>
+                        <input type="checkbox" id="allDayAir" name="allDayAir" value="true"/>
+                        <label for="allDayAir">
+                            <Rate
+                                price = "$5"
+                                description1 = "ALL DAY"
+                                description2 = "AIR"
+                            />
+                        </label>
+                        <input type="checkbox" id="rentalEquipment" name="rentalEquipment" value="true"/>
+                        <label for="rentalEquipment">
+                            <Rate
+                                price = "$15"
+                                description1 = "RENTAL"
+                                description2 = "EQUIPMENT"
+                            />
+                        </label>
+                        <input type="checkbox" id="rentalUpgrade" name="rentalUpgrade" value="true"/>
+                        <label for="rentalUpgrade">
+                            <Rate
+                                price = "$10"
+                                description1 = "RENTAL"
+                                description2 = "UPGRADE"
+                            />
+                        </label>
+                    </div>
                 </div>
-                <div class="priceContainer">
-                    <Package
-                        title = "Goliath Package"
-                        players = "15 - 24"
-                        price = "$38"
-                        paintballs = "500"
-                        persons1 = '8'
-                        persons2 = '7'
-                    />
-                    <Package
-                        title = "Godzilla Package"
-                        players = "25"
-                        price = "$35"
-                        paintballs = "500"
-                        persons1 = '12'
-                        persons2 = '8'
-                    />
+                <div class="section">
+                    <div class="playerPackageContainer">
+                        <span id="playerPackageTitle">Paintballs</span>
+                        <br/>
+                        <hr class="slime"/>
+                    </div>
+                    <div class="rateContainer">
+                        <input type="radio" id="paintballs1" name="paintballOrder"/>
+                        <label for="paintballs1">
+                            <Rate
+                                price = "$5"
+                                description1 = "100"
+                                description2 = "ROUNDS"
+                            />
+                        </label>
+                        <input type="radio" id="paintballs2" name="paintballOrder"/>
+                        <label for="paintballs2">
+                            <Rate
+                                price = "$20"
+                                description1 = "500"
+                                description2 = "ROUNDS"
+                            />
+                        </label>
+                        <input type="radio" id="paintballs3" name="paintballOrder"/>
+                        <label for="paintballs3">
+                            <Rate
+                                price = "$35"
+                                description1 = "1000"
+                                description2 = "ROUNDS"
+                            />
+                        </label>
+                        <input type="radio" id="paintballs4" name="paintballOrder"/>
+                        <label for="paintballs4">
+                            <Rate
+                                price = "$60"
+                                description1 = "2000"
+                                description2 = "ROUNDS"
+                            />
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="section">
-                <div class="playerPackageContainer">
-                    <span id="playerPackageTitle">Rates</span>
-                    <br/>
-                    <hr class="slime"/>
+                <div class="section">
+                    <div class="playerPackageContainer">
+                        <span id="playerPackageTitle">Rental Accessories</span>
+                        <br/>
+                        <hr class="slime"/>
+                    </div>
+                    <div class = "rateContainer">
+                        <input type="checkbox" id="chestProtector" name="chestProtector" value="true"/>
+                        <label for="chestProtector">
+                            <Rate
+                                price = "$5"
+                                description1 = "CHEST"
+                                description2 = "PROTECTOR"
+                            />
+                        </label>
+                        <input type="checkbox" id="tankRental" name="tankRental" value="true"/>
+                        <label for="tankRental">
+                            <Rate
+                                price = "$5"
+                                description1 = "TANK"
+                                description2 = "RENTAL"
+                            />
+                        </label>
+                        <input type="checkbox" id="maskRental" name="maskRental" value="true"/>
+                        <label for="maskRental">
+                            <Rate
+                                price = "$5"
+                                description1 = "MASK"
+                                description2 = "RENTAL"
+                            />
+                        </label>
+                        <input type="checkbox" id="vl200" name="vl200" value="true"/>
+                        <label for="vl200">
+                            <Rate
+                                price = "$5"
+                                description1 = "VL 200"
+                            />
+                        </label>
+                    </div>
+                    <div class="rateContainer">
+                        <input type="checkbox" id="jumpsuits" name="jumpsuits" value="true"/>
+                        <label for="jumpsuits">
+                            <Rate
+                                price = "$10"
+                                description1 = "JUMPSUITS"
+                            />
+                        </label>
+                        <input type="checkbox" id="harnessPods" name="hardnessPods" value="true"/>
+                        <label for="harnessPods">
+                            <Rate
+                                price = "$5"
+                                description1 = "HARNESS &"
+                                description2 = "2 PODS"
+                            />
+                        </label>
+                        <input type="checkbox" id="electricHopper" name="electricHopper" value="true"/>
+                        <label for="electricHopper">
+                            <Rate
+                                price = "$10"
+                                description1 = "ELECTRIC"
+                                description2 = "HOPPER"
+                            />
+                        </label>
+                    </div>
                 </div>
-                <div class="rateContainer">
-                    <Rate
-                        price = "$15"
-                        description1 = "ALL DAY"
-                        description2 = "PLAY"
-                    />
-                    <Rate
-                        price = "$5"
-                        description1 = "ALL DAY"
-                        description2 = "AIR"
-                    />
-                    <Rate
-                        price = "$15"
-                        description1 = "RENTAL"
-                        description2 = "EQUIPMENT"
-                    />
-                    <Rate
-                        price = "$10"
-                        description1 = "RENTAL"
-                        description2 = "UPGRADE"
-                    />
+                <div class="section">
+                    <div class="reservationContainer">
+                        <button class="robot reservation">MAKE RESERVATION</button>
+                    </div>
                 </div>
-            </div>
-            <div class="section">
-                <div class="playerPackageContainer">
-                    <span id="playerPackageTitle">Paintballs</span>
-                    <br/>
-                    <hr class="slime"/>
-                </div>
-                <div class="rateContainer">
-                    <Rate
-                        price = "$5"
-                        description1 = "100"
-                        description2 = "ROUNDS"
-                    />
-                    <Rate
-                        price = "$20"
-                        description1 = "500"
-                        description2 = "ROUNDS"
-                    />
-                    <Rate
-                        price = "$35"
-                        description1 = "1000"
-                        description2 = "ROUNDS"
-                    />
-                    <Rate
-                        price = "$60"
-                        description1 = "2000"
-                        description2 = "ROUNDS"
-                    />
-                </div>
-            </div>
-            <div class="section">
-                <div class="playerPackageContainer">
-                    <span id="playerPackageTitle">Rental Accessories</span>
-                    <br/>
-                    <hr class="slime"/>
-                </div>
-                <div class = "rateContainer">
-                    <Rate
-                        price = "$5"
-                        description1 = "CHEST"
-                        description2 = "PROTECTOR"
-                    />
-                    <Rate
-                        price = "$5"
-                        description1 = "TANK"
-                        description2 = "RENTAL"
-                    />
-                    <Rate
-                        price = "$5"
-                        description1 = "MASK"
-                        description2 = "RENTAL"
-                    />
-                    <Rate
-                        price = "$5"
-                        description1 = "VL 200"
-                    />
-                </div>
-                <div class="rateContainer">
-                    <Rate
-                        price = "$10"
-                        description1 = "JUMPSUITS"
-                    />
-                    <Rate
-                        price = "$5"
-                        description1 = "HARNESS &"
-                        description2 = "2 PODS"
-                    />
-                    <Rate
-                        price = "$10"
-                        description1 = "ELECTRIC"
-                        description2 = "HOPPER"
-                    />
-                </div>
-            </div>
-            <div class="section">
-                <div class="reservationContainer">
-                    <button class="robot reservation">MAKE RESERVATION</button>
-                </div>
-            </div>
+            </form>
         </div>
     )
 };
