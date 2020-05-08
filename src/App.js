@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Routes to other pages
@@ -15,25 +15,47 @@ import Footer from './components/Footer';
 // Styles
 import './App.css';
 
-const App = () => ( 
-    <div>
-        <Router>
-            <Navigation/>
+class App extends Component { 
 
-            {/* All of the routes go here. */}
-            <main>
-            <Switch>
-                <Route exact path={Routes.HomePath} component={Home}/>
-                <Route path={Routes.AboutPath} component={About}/>
-                <Route path={Routes.PricingPath} component={Pricing}/>
-                <Route path={Routes.CartPath} component={Cart}/>
-            </Switch>
-            </main>
+    constructor(props) {
+        super(props);
+        this.state = {
+            formData: []
+        }
+    }
 
-        </Router>
+    transferFormData = (newData) => {
+        this.setState({
+            formData: newData
+        });
+    }
 
-        <Footer/>
-    </div>
-);
+    render() {
+        return (
+            <div>
+                <Router>
+                    <Navigation/>
+
+                    {/* All of the routes go here. */}
+                    <main>
+                    <Switch>
+                        <Route exact path={Routes.HomePath} component={Home}/>
+
+                        <Route path={Routes.AboutPath} component={About}/>
+
+                        <Route path={Routes.PricingPath} 
+                               component={() => <Pricing newFormInfo={this.transferFormData} />}/>
+
+                        <Route path={Routes.CartPath} 
+                               component={() => <Cart useFormInfo={this.state.formData} />}/>
+                    </Switch>
+                    </main>
+
+                </Router>
+
+                <Footer/>
+            </div>
+        )};
+};
 
 export default App;
